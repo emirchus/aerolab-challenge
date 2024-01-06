@@ -10,6 +10,8 @@ export class AxiosClient implements ApiClient {
       return baseURL;
     };
 
+    console.log(`Building AxiosClient with ${getUrl()}`);
+
     this.client = axios.create({
       baseURL: getUrl(),
     });
