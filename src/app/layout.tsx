@@ -3,6 +3,7 @@ import "./globals.css";
 import { fontSans } from "@/config/font-theme";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { QueryProvider } from "@/components/query-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen text-foreground bg-background font-sans antialiased",
           fontSans.variable
         )}
       >

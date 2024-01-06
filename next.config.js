@@ -10,8 +10,8 @@ const nextConfig = {
     {
       source: "/api/:path*",
       destination: `${process.env.AEROLAB_API}/:path*`,
-    },
-  ],
+    }
+  ]
 };
 
 module.exports = nextConfig;
